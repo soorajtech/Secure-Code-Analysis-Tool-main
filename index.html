@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Code Analysis Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Code Analysis Tool</h1>
+        <form>
+            <label for="fileUpload">Upload Python File:</label>
+            <input type="file" id="fileUpload" accept=".py"><br><br>
+            <button type="button" onclick="scanCode()">Scan</button>
+        </form>
+        <div id="result">
+            <h2>Scan Results</h2>
+            <p><strong>Pylint:</strong> Your code has 3 warnings and 1 error.</p>
+            <p><strong>Bandit:</strong> Potential security issue found in line 5 (use of subprocess).</p>
+        </div>
+    </div>
+    <script>
+        function scanCode() {
+            alert("This is a demo. Backend not connected.");
+        }
+    </script>
+</body>
+</html>
